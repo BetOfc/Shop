@@ -1,224 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toko Digital</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* General Body Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Developer who interested in the world of Software Development, Technology in general.">
+    <meta name="keywords" content="FlowFalcon, Flowfalcon, flowfalcon, nahida, Nahida">
+    <meta property="og:url" content="https://flowfalcon.xyz/linktree" />
+    <meta property="og:title" content="FlowFalcon - Learn Coding" />
+    <meta property="og:image" content="https://flowfalcon.xyz/img/prof.jpg"/>
+    <title>FlowFalcon | Linktree</title>
+    <!-- Favicon -->
+      <link rel="icon" href="https://pps.whatsapp.net/v/t61.24694-24/464189552_1104423697303442_6713501170108662209_n.jpg?ccb=11-4&oh=01_Q5AaIHsNhX_t4n9_RKVx0-8N5OdFDDU9jfqOSjsLZ0g4e6LQ&oe=67583F49&_nc_sid=5e03e0&_nc_cat=100" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    /* Container */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
 
-    /* Header Section */
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+    <a id="profilePicture" href="#popup">
+      <img src="https://pps.whatsapp.net/v/t61.24694-24/464189552_1104423697303442_6713501170108662209_n.jpg?ccb=11-4&oh=01_Q5AaIHsNhX_t4n9_RKVx0-8N5OdFDDU9jfqOSjsLZ0g4e6LQ&oe=67583F49&_nc_sid=5e03e0&_nc_cat=100" alt="Profile Picture">
+    </a>
 
-    .header img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
-
-    .header .info {
-      flex: 1;
-    }
-
-    .header .info h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      color: #333;
-    }
-
-    .header .info p {
-      margin: 5px 0;
-      color: #777;
-    }
-
-    /* Search Bar */
-    .search {
-      margin: 20px 0;
-      display: flex;
-    }
-
-    .search input {
-      flex: 1;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    /* Product Grid */
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-    }
-
-    .product-card {
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .product-card img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 10px;
-    }
-
-    .product-card h3 {
-      margin: 0;
-      font-size: 1rem;
-      color: #333;
-    }
-
-    .product-card p {
-      margin: 5px 0;
-      color: #777;
-    }
-
-    .product-card button {
-      background-color: #28a745;
-      color: #fff;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .product-card button:hover {
-      background-color: #218838;
-    }
-
-    /* Navigation Menu */
-    .nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0;
-    }
-
-    .nav a {
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .nav a .icon {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-
-    .nav a:hover {
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <img src="https://files.catbox.moe/mxq394.jpg" alt="Store Logo">
-      <div class="info">
-        <h1>MenoCloud</h1>
-        <p>WEBSITE SHOP BY MENO</p>
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://pps.whatsapp.net/v/t61.24694-24/464189552_1104423697303442_6713501170108662209_n.jpg?ccb=11-4&oh=01_Q5AaIHsNhX_t4n9_RKVx0-8N5OdFDDU9jfqOSjsLZ0g4e6LQ&oe=67583F49&_nc_sid=5e03e0&_nc_cat=100" target="_blank">
+            <img src="https://pps.whatsapp.net/v/t61.24694-24/464189552_1104423697303442_6713501170108662209_n.jpg?ccb=11-4&oh=01_Q5AaIHsNhX_t4n9_RKVx0-8N5OdFDDU9jfqOSjsLZ0g4e6LQ&oe=67583F49&_nc_sid=5e03e0&_nc_cat=100" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          Web Developer who interested in the world of Software Development, Technology in general.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
       </div>
     </div>
 
-    <!-- Search Bar -->
-    <div class="search">
-      <input id="search-bar" type="text" placeholder="Cari Produk MenoCloud" oninput="filterProducts()">
+    <div id="userName">
+      @FlowFalcon
     </div>
 
-    <!-- Product Grid -->
-    <div class="products" id="product-grid">
-      <div class="product-card">
-        <img src="https://pomf2.lain.la/f/qwkfbz9r.jpg" alt="Vps Produk">
-        <h3>VPS Digital Ocean RAM 2GB</h3>
-        <h3>Spesifikasi
-        -Garansi 15 Hari</h3>
-        <p>Rp20.000</p>
-        <button>Tambah</button>
-      </div>
-      <div class="product-card">
-        <img src="https://pomf2.lain.la/f/qwkfbz9r.jpg" alt="VPS Product">
-        <h3>VPS Digital Ocean RAM 1GB</h3>
-        <p>Rp10.000</p>
-        <button>Tambah</button>
-      </div>
-      <div class="product-card">
-        <img src="https://pomf2.lain.la/f/qwkfbz9r.jpg" alt="VPS Product">
-        <h3>Own PT Panel</h3>
-        <p>Rp25.000</p>
-        <button>Tambah</button>
-      </div>
+    <div id="links">
+      <a class="link" href="https://github.com/FlowFalcon" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://wa.me/6281779247472" target="_blank">
+        <i class="fab fa-whatsapp">&nbsp;</i>WhatsApp
+      </a>
+      <a class="link" href="https://tiktok.com/@flow.falcon" target="_blank">
+        <i class="fab fa-tiktok">&nbsp;</i>Tiktok
+      </a>
+      <a class="link" href="https://FlowFalcon.xyz/" target="_blank">
+        <i class="fas fa-globe">&nbsp;</i>Personal Website
+      </a>
+      <a class="link" href="https://whatsapp.com/channel/0029VasjrIh3gvWXKzWncf2P" target="_blank">
+        <i class="fab fa-whatsapp">&nbsp;</i>WhatsApp Channel
+      </a>
     </div>
-  </div>
 
-  <!-- Navigation Menu -->
-  <div class="nav">
-    <a href="#">
-      <i class="icon fas fa-home"></i>
-      <span>Beranda</span>
-    </a>
-    <a href="#">
-      <i class="icon fas fa-search"></i>
-      <span>Cari</span>
-    </a>
-    <a href="#">
-      <i class="icon fas fa-shopping-cart"></i>
-      <span>Keranjang</span>
-    </a>
-    <a href="#">
-      <i class="icon fas fa-user"></i>
-      <span>Akun</span>
-    </a>
-  </div>
-
-  <script>
-    function filterProducts() {
-      const searchInput = document.getElementById('search-bar').value.toLowerCase();
-      const products = document.querySelectorAll('.product-card');
-
-      products.forEach(product => {
-        const productName = product.querySelector('h3').textContent.toLowerCase();
-        if (productName.includes(searchInput)) {
-          product.style.display = 'block';
-        } else {
-          product.style.display = 'none';
-        }
-      });
-    }
-  </script>
-</body>
+    <div id="hashtag">
+      #FlowFalcon - Learn Coding
+    </div>
+  </body>
   </html>
